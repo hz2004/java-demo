@@ -12,6 +12,6 @@
 hs_err_pid*
 
 
-./spring-boot/build/*
-./spring-boot/.gradle/*
-./spring-boot/.idea/*
+spring-boot/build/*
+spring-boot/.gradle/*
+spring-boot/.idea/*
