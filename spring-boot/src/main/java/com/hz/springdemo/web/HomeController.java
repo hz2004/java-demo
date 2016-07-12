@@ -3,6 +3,7 @@ package com.hz.springdemo.web;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
+import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,8 +25,10 @@ public class HomeController {
     String secret;
 
     @RequestMapping("/")
-
     String home(){
+
+
+
         StringBuilder sb =new StringBuilder();
         List<String> files = args.getNonOptionArgs();
         boolean debug = args.containsOption("debug");
