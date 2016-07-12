@@ -1,0 +1,32 @@
+2016-07-12 10:36:04.545  INFO 5640 --- [restartedMain] c.h.s.SpringBootDemoApplication          : Starting SpringBootDemoApplication on hongzhang with PID 5640 (G:\code\java-demo\spring-boot\build\classes\main started by hz in G:\code\java-demo\spring-boot)
+2016-07-12 10:36:04.554  INFO 5640 --- [restartedMain] c.h.s.SpringBootDemoApplication          : No active profile set, falling back to default profiles: default
+2016-07-12 10:36:04.680  INFO 5640 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ee05059: startup date [Tue Jul 12 10:36:04 CST 2016]; root of context hierarchy
+2016-07-12 10:36:05.889  INFO 12544 --- [restartedMain] c.h.s.SpringBootDemoApplication          : Starting SpringBootDemoApplication on hongzhang with PID 12544 (G:\code\java-demo\spring-boot\build\classes\main started by hz in G:\code\java-demo\spring-boot)
+2016-07-12 10:36:05.892  INFO 12544 --- [restartedMain] c.h.s.SpringBootDemoApplication          : No active profile set, falling back to default profiles: default
+2016-07-12 10:36:05.899  INFO 12544 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fa1b0a2: startup date [Tue Jul 12 10:36:05 CST 2016]; root of context hierarchy
+2016-07-12 10:36:08.474  INFO 5640 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-07-12 10:36:08.513  INFO 5640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-07-12 10:36:08.518  INFO 5640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.36
+2016-07-12 10:36:08.745  INFO 5640 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-07-12 10:36:08.746  INFO 5640 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4071 ms
+2016-07-12 10:36:09.156  INFO 5640 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-07-12 10:36:09.164  INFO 5640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-07-12 10:36:09.166  INFO 5640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-07-12 10:36:09.168  INFO 5640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-07-12 10:36:09.170  INFO 5640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-07-12 10:36:09.526  INFO 5640 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ee05059: startup date [Tue Jul 12 10:36:04 CST 2016]; root of context hierarchy
+2016-07-12 10:36:09.604  INFO 5640 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.hz.springdemo.web.HomeController.home()
+2016-07-12 10:36:09.607  INFO 5640 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-12 10:36:09.608  INFO 5640 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-12 10:36:09.635  INFO 5640 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-12 10:36:09.642  INFO 5640 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-12 10:36:09.704  INFO 5640 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-12 10:36:09.841  INFO 5640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2016-07-12 10:36:09.908  INFO 5640 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-07-12 10:36:10.078  INFO 5640 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-07-12 10:36:10.085  INFO 5640 --- [restartedMain] c.h.s.SpringBootDemoApplication          : Started SpringBootDemoApplication in 6.127 seconds (JVM running for 6.776)
+2016-07-12 10:36:24.803  INFO 5640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-07-12 10:36:24.803  INFO 5640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-07-12 10:36:24.818  INFO 5640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-07-12 10:40:20.572  INFO 5640 --- [Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ee05059: startup date [Tue Jul 12 10:36:04 CST 2016]; root of context hierarchy
+2016-07-12 10:40:20.578  INFO 5640 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
