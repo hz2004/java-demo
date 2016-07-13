@@ -47,7 +47,7 @@ public class MainExecutor implements Watcher, Runnable, DataMonitor.DataMonitorL
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("this is a zookeeper demo. ");
+        System.out.println("this is a zookeeper demo.");
 
         if (args.length < 4) {
             System.err.println("USAGE: MainExecutor hostPort znode filename program [args ...]");
