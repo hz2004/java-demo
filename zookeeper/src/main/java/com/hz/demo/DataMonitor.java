@@ -76,8 +76,8 @@ public class DataMonitor implements Watcher, StatCallback {
             }
         } else {
             if (path != null && path.equals(znode)) {
-                // Something has changed on the node, let's find out
-                zk.exists(znode, true, this, null);
+                // Something has changed on the node, let's fin d out
+                zk.exists(znode, true, this,  null);
             }
         }
         if (chainedWatcher != null) {
