@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="zookeeper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/zookeeper_jar</output-path>
+    <root id="archive" name="zookeeper.jar">
+      <element id="module-output" name="zookeeper" />
+      <element id="extracted-dir" path="G:/software/dev/zookeeper/zookeeper-3.4.8/dist-maven/zookeeper-3.4.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
