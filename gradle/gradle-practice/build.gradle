@@ -7,3 +7,13 @@ task hello << {
 task world(dependsOn:hello) << {
 	println ' gradle!'
 }
+
+task papa
+
+papa << {
+	print 'hello, '
+}
+
+papa << {
+	println 'papa'
+}
