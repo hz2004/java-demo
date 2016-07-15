@@ -17,3 +17,56 @@ papa << {
 papa << {
 	println 'papa'
 }
+
+task init << {
+	println 'init env'
+}
+
+task base1 << {
+	println 'base task 1'
+}
+
+task base2 << {
+	println 'base task 2'
+}
+
+task dowork {
+	dependsOn << base2
+	dependsOn << base1
+	//println 'call: dowork'
+}
+
+//dowork.dependsOn base1
+
+task run << {
+	println 'running'
+}
+
+run.doFirst{
+	println 'do before running'
+}
+
+run.doFirst{
+	println 'do init'
+}
+
+run.doLast {
+	println 'do close'
+}
+
+run.doLast {
+	println 'do clear'
+}
+
+task createSchema << {
+	println 'create database schema'
+}
+
+task loadTestData(dependsOn: createSchema) << {
+	println 'load test data'
+}
+
+loadTestData.onlyIf {
+	System.properties['load.data'] == 'true'
+}
+
