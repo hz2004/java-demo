@@ -3,7 +3,10 @@ package com.hz.springdemo.web;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.autoconfigure.web.BasicErrorController;
+import org.springframework.boot.autoconfigure.web.ErrorController;
 import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +15,7 @@ import java.util.List;
 /**
  * Created by hz on 2016/7/10.
  */
-@RestController
+@Controller
 public class HomeController {
 
     @Autowired
@@ -26,9 +29,6 @@ public class HomeController {
 
     @RequestMapping("/")
     String home(){
-
-
-
         StringBuilder sb =new StringBuilder();
         List<String> files = args.getNonOptionArgs();
         boolean debug = args.containsOption("debug");
@@ -37,4 +37,21 @@ public class HomeController {
         files.forEach(item -> sb.append(item + "</br>"));
         return "Hello Spring boot!<br/> name:"+ myName  +"<br/>" + sb.toString();
     }
+
+    @RequestMapping("/info")
+    String info(){
+        return "info";
+    }
+
+
+
+    @RequestMapping("/errordemo")
+    String errorDemo(){
+        int a = 10;
+        int b = 0;
+        int c = a / b;
+        return "error";
+    }
+
+
 }

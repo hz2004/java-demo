@@ -1,0 +1,5 @@
+<h3>Error</h3>
+<div>
+    there was an error:<br/>
+    <p>$message</p>
+</div>

@@ -5,6 +5,6 @@ package com.hz.demo.gradle;
  */
 public class Demo {
     public static void main(String[] args) {
-        System.out.println("hello gradle !");
+        System.out.println("Hello gradle !");
     }
 }
