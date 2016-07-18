@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.web.BasicErrorController;
 import org.springframework.boot.autoconfigure.web.ErrorController;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,7 +35,7 @@ public class HomeController {
         boolean debug = args.containsOption("debug");
         sb.append("secret:"+ secret + "</br>");
         sb.append("debug:" + debug + "</br>");
-        files.forEach(item -> sb.append(item + "</br>"));
+//        files.forEach(item -> sb.append(item + "</br>"));
         return "Hello Spring boot!<br/> name:"+ myName  +"<br/>" + sb.toString();
     }
 
@@ -51,6 +52,13 @@ public class HomeController {
         int b = 0;
         int c = a / b;
         return "error";
+    }
+
+
+    @ExceptionHandler(value = ArithmeticException.class)
+    public String nfeHandler(ArithmeticException e){
+//        return e.getMessage();
+        return "customerror";
     }
 
 
