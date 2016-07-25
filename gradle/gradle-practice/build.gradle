@@ -1,3 +1,5 @@
+description = 'this is the root project'
+
 apply plugin: 'java'
 
 task hello << {
@@ -31,6 +33,7 @@ task base2 << {
 }
 
 task dowork {
+	description = '### this task is dowork ###'
 	dependsOn << base2
 	dependsOn << base1
 	//println 'call: dowork'
