@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletRequest;
  * Created by hz on 2016/7/18.
  */
 //@ControllerAdvice(basePackageClasses = Exception.class)
-@ControllerAdvice
-@RestController
+//@ControllerAdvice
+//@RestController
 //public class MyErrorHandler extends ResponseEntityExceptionHandler {
 public class MyErrorHandler {
 

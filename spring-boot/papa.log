@@ -8804,3 +8804,46 @@ Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method m
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.2.7.RELEASE.jar:4.2.7.RELEASE]
 	... 63 common frames omitted
 
+2016-07-18 18:13:02.899  INFO 8416 --- [restartedMain] c.h.s.SpringBootDemoApplication          : Starting SpringBootDemoApplication on hongzhang with PID 8416 (G:\code\java-demo\spring-boot\build\classes\main started by hz in G:\code\java-demo\spring-boot)
+2016-07-18 18:13:02.900  INFO 8416 --- [restartedMain] c.h.s.SpringBootDemoApplication          : No active profile set, falling back to default profiles: default
+2016-07-18 18:13:02.902  INFO 8416 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@708e03a1: startup date [Mon Jul 18 18:13:02 CST 2016]; root of context hierarchy
+2016-07-18 18:13:04.232  INFO 8416 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-07-18 18:13:04.232  INFO 8416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-07-18 18:13:04.233  INFO 8416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.36
+2016-07-18 18:13:04.241  INFO 8416 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-07-18 18:13:04.243  INFO 8416 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1341 ms
+2016-07-18 18:13:04.313  INFO 8416 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-07-18 18:13:04.314  INFO 8416 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-07-18 18:13:04.315  INFO 8416 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-07-18 18:13:04.316  INFO 8416 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-07-18 18:13:04.317  INFO 8416 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-07-18 18:13:04.400  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@708e03a1: startup date [Mon Jul 18 18:13:02 CST 2016]; root of context hierarchy
+2016-07-18 18:13:04.408  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-18 18:13:04.408  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-18 18:13:04.425  INFO 8416 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 18:13:04.425  INFO 8416 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 18:13:04.440  INFO 8416 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 18:13:04.527  INFO 8416 --- [restartedMain] o.s.w.s.v.velocity.VelocityConfigurer    : ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-07-18 18:13:04.588  INFO 8416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2016-07-18 18:13:04.717  INFO 8416 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-07-18 18:13:04.759  INFO 8416 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-07-18 18:13:04.760  INFO 8416 --- [restartedMain] c.h.s.SpringBootDemoApplication          : Started SpringBootDemoApplication in 1.962 seconds (JVM running for 12008.956)
+2016-07-18 18:13:07.178  INFO 8416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-07-18 18:13:07.178  INFO 8416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-07-18 18:13:07.181  INFO 8416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2016-07-18 18:13:07.489  INFO 5576 --- [Test worker] c.h.s.SpringBootDemoApplicationTests     : Starting SpringBootDemoApplicationTests on hongzhang with PID 5576 (G:\code\java-demo\spring-boot\build\classes\test started by hz in G:\code\java-demo\spring-boot)
+2016-07-18 18:13:07.493  INFO 5576 --- [Test worker] c.h.s.SpringBootDemoApplicationTests     : No active profile set, falling back to default profiles: default
+2016-07-18 18:13:07.649  INFO 5576 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@19e1927d: startup date [Mon Jul 18 18:13:07 CST 2016]; root of context hierarchy
+2016-07-18 18:13:11.176  INFO 5576 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@19e1927d: startup date [Mon Jul 18 18:13:07 CST 2016]; root of context hierarchy
+2016-07-18 18:13:11.294  INFO 5576 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/detail]}" onto public java.lang.String com.hz.springdemo.web.DetailController.detail()
+2016-07-18 18:13:11.298  INFO 5576 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info]}" onto java.lang.String com.hz.springdemo.web.HomeController.info()
+2016-07-18 18:13:11.299  INFO 5576 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.hz.springdemo.web.HomeController.home()
+2016-07-18 18:13:11.301  INFO 5576 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errordemo]}" onto java.lang.String com.hz.springdemo.web.HomeController.errorDemo()
+2016-07-18 18:13:11.305  INFO 5576 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-18 18:13:11.308  INFO 5576 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-18 18:13:11.363  INFO 5576 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 18:13:11.364  INFO 5576 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 18:13:11.465  INFO 5576 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 18:13:11.645  INFO 5576 --- [Test worker] o.s.w.s.v.velocity.VelocityConfigurer    : ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-07-18 18:13:11.925  INFO 5576 --- [Test worker] c.h.s.SpringBootDemoApplicationTests     : Started SpringBootDemoApplicationTests in 5.09 seconds (JVM running for 6.49)
+2016-07-18 18:13:11.968  INFO 5576 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@19e1927d: startup date [Mon Jul 18 18:13:07 CST 2016]; root of context hierarchy
